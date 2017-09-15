@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+<form src=" http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php "action="/action_page_binary.asp"method="post" id="nameform" enctype="multipart/form-data">
+<fieldset>
+  <legend>Your Face</legend>
+  <label for="avatar">Your Image:</label>
+  <input type="file" id="avatar" name="avatar"required>
+<br><br>
+<legend>Image Preview:</legend>
+<img id="preview">
+</fieldset>
+<fieldset>
+  <legend>Your General Details</legend>
+  Name:<input type="text" name="fname" placeholder="First name" required >
+      <input type="text" name="lname" placeholder="Last name" required>
+<br><br>
+Gender:<input type="radio"required>Male
+<input type="radio"required>Female
+<br><br>
+Age:<input type="number" value="18">
+<br><br>
+Date of Birth:<input type="date">
+<br><br>
+Favorite Color:<input type="color">
+<br><br>
+Which Country:<select required>
+  <option value="USA">Usa</option>
+  <option value="England">England</option>
+  <option value="China">China</option>
+  <option value="Japan">Japan</option>
+  <option value="Italy">Italy</option>
+  <option value="France">France</option>
+</select>
+</fieldset>
+<fieldset>
+  <legend> Your Indicators</legend>
+  Hight: Short<input type="range"min="0"max="100">Tall
+<br><br>
+  Salary:Poor<input type="range" min="0"max="100">Rich
+</fieldset>
+<fieldset>
+  <legend>Contact Information</legend>
+Email:<input type="email">
+  <br><br>
+Mobile:<input type="tel">
+<br><br>
+Adress:<textarea input type="text"></textarea>
+
+<br><br>
+Method to Contact You:
+  <input type="checkbox">Email
+  <input type="checkbox">Whatsapp
+  <input type="checkbox">In-App-Chat
+</fieldset>
+</form>
+<br>
+<input type="submit" value="submit">
+
+</body>
+</html>

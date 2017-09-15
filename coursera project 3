@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+img {width:150px;}
+button[type=submit]{
+  width:200px;
+  border: 5px solid  yellow;
+  border-radius: 5px;
+  background-color: white;}
+input[type=number ]{width:10%;}
+input[type=range]{-webkit-appearance:none;
+width: 40%;
+border-radius:12px;
+height: 7px;
+border: 1px solid black;
+background-color: lightgrey;
+}
+textarea{vertical-align:
+   top;width: 360px;
+    height: 50px;
+  }
+fieldset {
+  width: 720px;
+  margin-bottom: 10px;
+  background:lightyellow;
+  border-color:yellow;
+   border:10px solid yellow;
+ }
+
+label:hover{font-size:40px;}
+label {
+  clear: left;
+  float: left;
+  padding-right: 4px;
+  text-align: right;
+  display: inline-block;
+  width: 180px;
+}
+a{
+  color:white;
+background-color: red;
+text-align: center;
+border:10px solid red;
+}
+a1{color:white;
+  margin-right: 2px;
+  background-color: red;
+text-align: center;
+border:12.4px solid red;
+
+}
+a2{color:white;
+  margin-left: -1.7px;
+background-color: purple;
+text-align: center;
+border:11.7px solid purple;
+}
+a3{color:white;
+  background-color: purple;
+text-align: center;
+border:8.8px solid purple;
+}
+</style>
+</head>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+<body>
+<form action="/action_page.php"method="get" id="nameform">
+<fieldset>
+  <legend>Your Face</legend>
+<div>
+   <label for="avatar">Your Image:</label>
+   <input  type="file"id="avatar"name="avatar" required>
+</div>
+<br>
+<div>
+  <label for="Image">Image Preview:</label>
+  <img id="preview">
+</div>
+</fieldset>
+<fieldset>
+  <legend>Your General Details</legend>
+<div>
+  <label for="name">Name:</label>
+      <input type="text" name="fname" placeholder="First name" required >
+      <input type="text" name="lname" placeholder="Last name" required>
+</div>
+<div>
+ <label for="gender">  Gender:</label>
+ <input type="radio" name="gender" value="male" width="auto" required>Male
+ <input type="radio" name="gender" value="female"width="auto"required>Female</div>
+<div>
+ <label for="age">Age:</label>
+ <input type="number" value="18">
+ </div>
+<div>
+ <label for="date of birth">Date of Birth:</label>
+ <input type="date">
+</div>
+<div>
+ <label for="FavoriteColor">Favorite Color:</label><input type="color">
+</div>
+<div>
+ <label for="WhichCountry">Which Country:</label>
+  <select>
+    <option value="country">Country</option>
+     <option value="USA">USA</option>
+     <option value="England">England</option>
+     <option value="China">China</option>
+     <option value="Japan">Japan</option>
+     <option value="Italy">Italy</option>
+     <option value="France">France</option>
+   </select>
+</div>
+</fieldset>
+<fieldset>
+  <legend> Your Indicators</legend>
+<div>
+ <label for="hight">Hight:</label>
+ <a>Short</a>
+ <input type="range"min="0"max="100">
+ <a2>Tall</a2>
+</div>
+<br>
+<div>
+ <label for="salary">Salary:</label>
+ <a1>Poor</a1><input type="range" min="0"max="100">
+ <a3>Rich</a3>
+</div>
+</fieldset>
+<fieldset>
+  <legend>Contact Information</legend>
+<div>
+  <label for="Email">Email:</label><input type="email">
+</div>
+ <label for="Mobile">Mobile:</label><input type="tel">
+</div>
+<div>
+ <label for="Adress">Adress:</label>
+ <textarea></textarea>
+</div>
+<div>
+<label for="Contact">Method to Contact You:</label>
+  <input type="checkbox"name="contact" value="email"width="auto">Email
+  <input type="checkbox"name="contact" value="Whatsapp"width="auto">Whatsapp
+  <input type="checkbox" name="contact" value"in-app-chat"width="auto">In-App-Chat
+</div>
+</fieldset>
+</form>
+<div>
+<button type="submit" form="nameform" value="Submit">Submit</button>
+</div>
+</body>
+</html>
